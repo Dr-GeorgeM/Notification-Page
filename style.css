@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.container {
+    margin: 0;
+    background-color: white;
+    border-radius: 15px;
+}
+@media (min-width: 768px) {
+    .container {
+        margin: 100px 100px;
+    }
+}
+@media (min-width: 991px) {
+    .container {
+        margin:100px 280px;
+    }
+}
+
+/* Start Header Section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .notifications {
+    margin: 30px ;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    position: relative;
+}
+.header .notifications .msg-num {
+    position: absolute;
+    top: 3px;
+    right: -40px;
+    background-color: hsl(224, 63%, 23%);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: small;
+}
+.header .btn {
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    margin: 18px 20px;
+    margin-top: 32px;
+    color: hsl(219, 10%, 55%);
+    cursor: pointer;
+}
+.header .btn:hover {
+    color: hsl(225, 72%, 32%);
+    transition: .4s;
+}
+/* End Header Section */
+/* Start Messages Section */
+.unread-msg {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.unread-msg .message-one {
+    display: flex;
+    align-items: center;
+    background-color:  hsl(210, 60%, 98%);
+    margin: 5px 20px;
+    border-radius: 15px;
+}
+.unread-msg .img img {
+    height: 50px;
+    border-radius: 50%;
+    margin:10px 20px 10px 10px  ;
+}
+.unread-msg .message-one .msg-content .main {
+    font-weight: 800;
+}
+.unread-msg .message-one .msg-content .main:hover {
+    color: hsl(225, 72%, 32%);
+    cursor: pointer;
+    transition: .4s;
+}
+.unread-msg .message-one .msg-content .main span {
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(219, 10%, 55%);
+}
+.unread-msg .message-one .msg-content .main span.blue {
+    color: hsl(225, 72%, 32%);
+    font-weight: 800;
+    cursor: pointer;
+}
+.unread-msg .message-one .msg-content .main::after {
+    content: "•";
+    color: hsl(1, 90%, 64%);
+    margin: 0 5px;
+}
+.unread-msg .message-one .msg-content .time {
+    text-align: left;
+    margin-top: 5px;
+    color:  hsl(219, 10%, 55%);
+}
+.unread-msg .read-message-one{
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+    border-radius: 15px;
+    position: relative;
+}
+.unread-msg .read-message-one .msg-content .main:hover {
+    color: hsl(225, 72%, 32%);
+    cursor: pointer;
+    transition: .4s;
+}
+.unread-msg .read-message-one .msg-content .main {
+font-weight: 800;
+}
+.unread-msg .read-message-one .msg-content .main span {
+    font-weight: 500;
+    font-size: 18px;
+    color: hsl(219, 10%, 55%);
+}
+.unread-msg .read-message-one .msg-content .time {
+    text-align: left;
+    margin-top: 5px;
+    color:  hsl(219, 10%, 55%);
+}
+.unread-msg .sent-message {
+    text-align: start;
+    margin: 0 90px;
+    border: 1px hsl(225, 3%, 71%) solid;
+    padding: 25px;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+@media (max-width: 991px) {
+    .unread-msg .sent-message {
+        margin: 0 21px 10px 98px;
+        padding: 10px;
+        text-align: start;
+    }
+}
+.unread-msg .sent-message:hover {
+    cursor: pointer;
+    background-color:  hsl(210, 35%, 90%);
+    transition: .4s;
+}
+.unread-msg .read-message-one.flex {
+    display: flex;
+    align-items: center;
+}
+.unread-msg .read-message-one .image {
+    margin: 0 auto;
+    margin-right: 0;
+}
+.unread-msg .read-message-one .image img {
+    height: 60px;
+    border-radius: 10px;
+    margin:10px 20px 10px 10px  ;
+}
+.unread-msg .read-message-one .msg-content .main strong {
+    font-weight: 800;
+    font-weight: 18px;
+    color: hsl(220, 6%, 47%);
+}
+.unread-msg .read-message-one .msg-content .main span.blue {
+    color: hsl(225, 72%, 32%);
+    font-weight: 800;
+}
+/* End Messages Section */
